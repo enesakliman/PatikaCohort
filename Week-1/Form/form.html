@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form HomeWork</title>
+  </head>
+  <body>
+    <h1>Form Elemanları ile Örnek</h1>
+
+    <fieldset>
+      <legend>Kişisel Bilgiler:</legend>
+      <!--Text, input ve label özellikleri-->
+      <div>
+        <label for="name">İsim: </label>
+        <input type="text" id="name" />
+        <br />
+        <label for="surname">Soyisim: </label>
+        <input type="text" id="surname" />
+      </div>
+      <br />
+      <!--email ve password kullanımı-->
+      <div>
+        <label for="email">E-posta Adresi: </label>
+        <input type="email" id="email" />
+        <br />
+        <label for="password">Parolanızı giriniz: </label>
+        <input type="password" id="password" />
+      </div>
+      <br />
+      <!--radio kullanımı-->
+      <div>
+        <label for="gender">Cinsiyetiniz: </label>
+        <input type="radio" name="gender" value="male" />Erkek
+        <input type="radio" name="gender" value="female" />Kadın
+      </div>
+      <br />
+      <!--select ve option kullanımı, liste oluşturma-->
+      <div>
+        <label for="fruit">Sevdiğiniz meyve: </label>
+        <select name="fruit" id="fruit">
+          <option value>Seçiniz</option>
+          <option value="fruit">Elma</option>
+          <option value="fruit">Armut</option>
+          <option value="fruit">Çilek</option>
+          <option value="fruit">Portakal</option>
+          <option value="fruit">Karpuz</option>
+          <option value="fruit">Kavun</option>
+          <option value="fruit">Kiraz</option>
+          <option value="fruit">Vişne</option>
+          <option value="fruit">Ahududu</option>
+          <option value="fruit">Şeftali</option>
+          <option value="fruit">Mandalina</option>
+        </select>
+      </div>
+      <br />
+    </fieldset>
+    <fieldset>
+      <legend>İletişim:</legend>
+      <!--textarea kullanımı-->
+      <div>
+        <label for="iletisim">Önerileriniz: </label>
+        <textarea id="iletisim" rows="5" cols="40"></textarea>
+      </div>
+    </fieldset>
+    <!--submit ve reset kullanımı-->
+    <div>
+      <button type="submit">Gönder</button>
+      <button type="reset">Temizle</button>
+    </div>
+  </body>
+</html>
