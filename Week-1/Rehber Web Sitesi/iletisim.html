@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rehber Web Sitesi</title>
+  </head>
+  <style>
+    /*Stillendirmeler*/
+    header {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 10px;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <header>
+      <!--Anamenü ve başlık yapısı-->
+      <nav>
+        <h1>Sönmez Yayınevi</h1>
+        <h3>Doğru Kaynağın Adresi</h3>
+        <a href="index.html">Anasayfa</a>| <a href="hakkinda.html">Hakkında</a>|
+        <a href="iletisim.html">İletişim</a>|
+        <a href="servisler.html">Servisler</a>
+      </nav>
+    </header>
+    <div>
+      <h2>Bizimle İletişime Geçin</h2>
+      <p>
+        Bizimle paylaşmak istediğiniz önerileriniz, şikayetleriniz için lütfen
+        aşağıdaki boşlukları doldurunuz.
+      </p>
+    </div>
+    <hr>
+    <!--Form özelliklerini liste içinde kullanma-->
+    <ul>
+      <form>
+        <legend>Kişisel Bilgiler</legend>
+        <li>
+          <label for="name">İsim:</label>
+          <input type="text" name="name" required />
+        </li>
+
+        <li>
+          <label for="surname">Soyisim:</label>
+          <input type="text" name="surname" required />
+        </li>
+        <li>
+          <label for="birthday">Doğum Tarihi:</label>
+          <input type="date" name="birthday" />
+        </li>
+        <li>
+          <label for="gender">Cinsiyet:</label>
+          <input type="radio" name="gender" value="Female" />Kadın
+          <input type="radio" name="gender" value="Male" />Erkek
+        </li>
+        <li>
+          <label for="email">E-Posta:</label>
+          <input type="email" name="email" required />
+        </li>
+        <li>
+          <label for="phone">Telefon No:</label>
+          <input type="tel" name="phone" required />
+        </li>
+      </form>
+    </ul>
+    <hr />
+    <ul>
+      <form>
+        <legend>Adres Bilgisi</legend>
+        <li>
+          <label for="city">İl</label>
+          <select name="city">
+            <option value="istanbul">İstanbul</option>
+            <option value="ankara">Ankara</option>
+            <option value="izmir">İzmir</option>
+            <option value="bursa">Bursa</option>
+            <option value="hatay">Hatay</option>
+            <option value="gumushane">Gümüşhane</option>
+            <option value="manisa">Manisa</option>
+            <option value="sinop">Sinop</option>
+            <option value="ordu">Ordu</option>
+          </select>
+        </li>
+        <li>
+          <label for="adress">Adres</label>
+          <textarea name="adress" cols="40" role="40"></textarea>
+        </li>
+        <li>
+          <label for="check1"></label><input type="checkbox" required />
+          Aydınlatma metnini kabul ediyorum.
+        </li>
+        <li>
+          <label for="check2"></label><input type="checkbox" required />
+          SMS ve E-posta bildirimleri için lütfen tıklayınız.
+        </li>
+        <li>
+          <input type="submit" />
+          <input type="Reset" />
+        </li>
+      
+      </form>
+
+    </ul>
+    <hr>
+    <ul>
+      <li>
+        <label for="message">Sizi dinliyoruz.</label><textarea name="message" cols="40" role="40"></textarea></li>
+    </ul>
+    <footer>
+      <p>Since 1952</p>
+    </footer>
+  </body>
+</html>
