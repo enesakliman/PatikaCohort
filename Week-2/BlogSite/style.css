@@ -1,0 +1,123 @@
+/*index.html*/
+
+/*Genel CSS Ayarlar*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header {
+  background-color: #333;
+  text-align: center;
+  margin-top: -23px;
+  padding: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+h1 {
+  color: #f4f4f4;
+  font-size: 36px;
+}
+
+li a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li a:hover {
+  color: antiquewhite;
+}
+
+/*Section*/
+
+#ph {
+  font-size: 30px;
+  margin: 30px;
+}
+
+.section-1 {
+  width: 90%;
+  min-height: 680px;
+  margin: 0 auto;
+}
+
+.blog-post {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blog-post article {
+  width: 30%;
+  height: 50vh;
+  text-align: center;
+  box-shadow: 0 0 5px;
+  background-color: #f4f4f4;
+}
+
+.blog-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.blog-post img {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+}
+.blog-post p {
+  text-align: center;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #333;
+}
+
+footer p {
+  color: #f4f4f4;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+  margin: 100px 0 0 0;
+}
+
+/*post.html*/
+
+.section {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin: 20px 80px;
+  width: 90%;
+  min-height: 680px;
+}
+
+.post {
+  border: 1px solid white;
+  box-shadow: 0 0 10px;
+  padding: 2rem;
+}
+
+.post img {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+}
