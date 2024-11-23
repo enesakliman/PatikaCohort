@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form CSS Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="form-container">
+      <header>
+        <h1 id="title">
+          Survey Form for <br />
+          CSS Practice
+        </h1>
+      </header>
+      
+      <form id="survey-form">
+        <!--Name-->
+        <div id="name-label">
+          <fieldset>
+            <legend>
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" />
+            </legend>
+          </fieldset>
+        </div>
+        <!--E-mail-->
+        <div id="email-label">
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Mail"
+            required
+          />
+        </div>
+        <!--Number-->
+        <div id="number-label">
+          <label for="number"></label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="18"
+            max="110"
+            placeholder="Age"
+          />
+        </div>
+        <!--Seçenek-->
+        <div id="dropdown">
+          <label for="gender"></label>
+          <select name="gender" id="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <!--Social Media-->
+        <div>
+          <h2>Where did you here us?</h2>
+          <label for="socialmedia"></label>
+          <input type="radio" name="socialmedia" value="instagram" />instagram
+          <input type="radio" name="socialmedia" value="linkedin" />LinkedIn
+        </div>
+        <!--Checkbox-->
+        <div>
+          <label for="accept"></label>
+          <input type="checkbox" name="accept" value="tos" />Terms of Service
+          <input type="checkbox" name="accept" value="sfn" />Subscribe for News
+        </div>
+        <!--Submit-->
+        <div>
+          <textarea name="comment" id="comment" role="15px" cols="35px">
+          </textarea>
+        </div>
+        <!--Submit-->
+        <div>
+            <label for="submit"></label>
+            <input type="submit" id="submit">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+/*Genel CSS Ayarları*/
+body {
+  font-family: Arial, sans-serif;
+  background: #a34054;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.form-container {
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+}
+
+/*HEADER*/
+
+header {
+  color: white;
+  padding-top: 5px;
+  margin-bottom: 15px;
+}
+
+/*FORM*/
+
+#survey-form {
+  background-color: #e9bc89;
+  display: inline-block;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  line-height: 40px;
+  margin-top: 30px;
+  min-width: 400px;
+  min-height: 100%;
+  border-radius: 15%;
+  align-items: center;
+  box-shadow: 0 0 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  background-color: #e9bc89;
+  padding: 10px;
+}
+
+#submit {
+  border: none;
+  font-size: 18px;
+  background-color: #e9bc89;
+  color: white;
+  cursor: pointer;
+}
