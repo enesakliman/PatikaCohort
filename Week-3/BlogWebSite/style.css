@@ -1,0 +1,21 @@
+* {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    
+}
+
+.bg-blue {
+    background-color: #19305c;
+}
+
+.jumbotron h1 {
+    color: #19305c;
+}
+
+#footer {
+    background-color: #19305c;
+    color: white;
+    height: 2.5rem;
+    text-align: center;
+    align-items: center;
+
+}
