@@ -1,0 +1,53 @@
+* {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    
+    
+}
+
+:root {
+    --bg-first-color: white
+    --bg-second-color: #0077B5
+}
+
+#mainL {
+    background-color: #fce3bc;
+    height: 225vh;
+}
+
+.font-text-main {
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.e-button {
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+   
+    
+}
+
+.e-button a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+
+#news a {
+    text-decoration: none;
+    color: black;
+}
+
+#news span {
+    color: gray;
+    font-size: 12px;
+}
