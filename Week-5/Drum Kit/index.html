@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Drum Kit/css/style.css" />
+
+    <title>Drum Kit</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <h1 id="head">Play Your Dream Song</h1>
+
+    <!-- PNG -->
+    <div id="drum">
+      <img id="drum-img" src="../Drum Kit/Audio/drum.png" alt="music" />
+    </div>
+
+    <!-- Button -->
+    <div class="container">
+      <button class="drumButton">
+        A <audio class="drum-audio" src="../Drum Kit/Audio/boom.wav"></audio>
+      </button>
+      <button class="drumButton">
+        S <audio class="drum-audio" src="../Drum Kit/Audio/clap.wav"></audio>
+      </button>
+      <button class="drumButton">
+        D <audio class="drum-audio" src="../Drum Kit/Audio/hihat.wav"></audio>
+      </button>
+      <button class="drumButton">
+        F <audio class="drum-audio" src="../Drum Kit/Audio/kick.wav"></audio>
+      </button>
+      <button class="drumButton">
+        G <audio class="drum-audio" src="../Drum Kit/Audio/openhat.wav"></audio>
+      </button>
+      <button class="drumButton">
+        H <audio class="drum-audio" src="../Drum Kit/Audio/ride.wav"></audio>
+      </button>
+      <button class="drumButton">
+        J <audio class="drum-audio" src="../Drum Kit/Audio/snare.wav"></audio>
+      </button>
+      <button class="drumButton">
+        K <audio class="drum-audio" src="../Drum Kit/Audio/tink.wav"></audio>
+      </button>
+      <button class="drumButton">
+        L <audio class="drum-audio" src="../Drum Kit/Audio/tom.wav"></audio>
+      </button>
+    </div>
+    <script>
+      // // Sesi çalma
+      let play = document.querySelectorAll(".drumButton");
+
+      play.forEach((button) => {
+        button.addEventListener("click", () => {
+          let audio = button.querySelector("audio");
+
+          audio.play();
+        });
+      });
+    </script>
+  </body>
+</html>

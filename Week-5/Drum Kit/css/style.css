@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #19305c;
+}
+
+/* Header */
+#head {
+    text-align: center;
+    margin: 3rem;
+    font-size: 56px;
+    color: white;
+}
+
+/* PNG */
+#drum {
+    display: flex;
+    justify-content: center;
+}
+
+#drum-img {
+    width: 46%;
+}
+
+/* Box */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.drumButton {
+    background-color: lightskyblue;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px 40px;
+    margin: 2rem 1rem;
+    border-radius: 10%;
+    box-shadow: 0 0 0 transparent;
+}
+
+.drumButton:active {
+    box-shadow: 0px 0px 48px 16px #2EAAFF;
+}
