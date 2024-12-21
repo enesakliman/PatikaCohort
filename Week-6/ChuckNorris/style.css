@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #81b3a3;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #60856b;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50%;
+    
+}
+
+#header {
+    color: white;
+    position: absolute;
+    top: 10px;
+
+}
+
+#jokes-btn {
+    background-color: #3a524b;
+    color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px;
+}
+
+#jokes-container {
+    margin: 4rem;
+    padding: 1rem;
+    color: white;
+}
