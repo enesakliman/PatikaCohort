@@ -1,0 +1,189 @@
+/* Header Section */
+
+/* Scroll */
+.navbar-scroll {
+    background-color: #355592; 
+    transition: background-color 0.3s ease; 
+}
+
+.navbar-scroll .nav-menu a:hover {
+    background-color: #f29d0e;
+    transition: all 0.4s ease;
+}
+/* Hero Section */
+#hero {
+    background-image: url('./assets/hero-man.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+/* Hero Text Shadow */
+#hero .hero-content h1 { 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);   
+}
+
+#hero .hero-content h3 {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+#hero .hero-content p {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+}
+
+#btn-sign-up {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+#btn-details {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    border: 2px solid #fff; 
+}
+
+/* Classes Section */
+#classes .clip-path {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    background-color: #f6f6f6;
+    clip-path: polygon(36% 0, 100% 0%, 100% 100%, 50% 100%);
+}
+
+#classes .classes-general i {
+    font-size: 5rem;
+    color: #f29d0e;
+}
+
+/* Calculator Section */
+#calculator .calculator-content input {
+    border: 1px solid #5c5c5c;
+}
+
+#calculator .bmi-scroll {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#calculator img {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+#calculator .scroll-icon {
+    position: absolute;
+    bottom: -30px;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Trainer Section */
+#trainer .best-trainer i {
+    font-size: 5rem;
+    color: #f29d0e;
+}
+
+.trainer-card {
+    position: relative;
+    overflow: hidden;
+    width: 280px;
+    height: 350px;
+
+}
+
+.bg-cover-clip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 35%, 35% 25%, 35% 0, 66% 0, 65% 25%, 100% 35%, 100% 65%, 75% 75%, 65% 100%, 35% 100%, 25% 75%, 0 65%);
+    transition: all 0.5s;
+}
+
+.trainer-card:hover .bg-cover-clip {
+    clip-path: polygon(0 25%, 25% 25%, 25% 0, 75% 0, 75% 25%, 100% 25%, 100% 75%, 75% 75%, 75% 100%, 25% 100%, 25% 75%, 0 75%);
+    transition: clip-path 0.5s ease-in-out;
+}
+
+
+.trainer-card img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 96%;
+    height: 97%;
+    object-fit: center;
+    transition: all 0.5s;
+    border: 2px solid #f29d0e;
+    border-radius: 10px;
+}
+
+.trainer-info {
+    position: absolute;
+    bottom: -200px;
+    right: 1.5rem;
+    left: 1.5rem;
+    padding: 10px;
+    color: white;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    transition: all 0.7s;
+}
+
+.trainer-card:hover .trainer-info {
+    bottom: 2rem;
+}
+
+/* Pruchase Section */
+#pruchase .pruchase-info i {
+    font-size: 5rem;
+    color: #f29d0e;
+}
+
+#pruchase .add-to-card {
+    cursor: pointer;
+}
+
+/* Review Section */
+#review {
+    background-color: #f1f8ff;
+}
+
+#review .review-info i {
+    font-size: 5rem;
+    color: #f29d0e;
+}
+
+#review .review-message {
+    color: white;
+}
+
+#review .shadow-corner-right {
+    width: 50%;
+    height: 40px;
+    right: 0;
+    bottom: -40px;
+    clip-path: polygon(80% 0, 80% 100%, 100% 0);
+    
+}
+
+#review .shadow-corner-left {
+    width: 50%;
+    height: 40px;
+    left: 0;
+    bottom: -40px;
+    clip-path: polygon(20% 0, 20% 100%, 0 0);
+}
+
+/* Contact Section */
+#contact .contact-info i {
+    font-size: 5rem;
+    color: #f29d0e;
+}
+
+/* Footer Section */
+#footer li {
+    cursor: pointer;
+}
