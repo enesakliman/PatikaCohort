@@ -1,0 +1,53 @@
+.content {
+    display: grid;
+    
+
+}
+
+h1 {
+    font-size: 8rem;
+    color: #fff;
+}
+
+p {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+}
+.player1 {
+    color: #f0b916;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.player2 {
+    color: #f0b916;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.players input {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+}
+
+button {
+    background-image: linear-gradient(to right, #f0b916, #f5af19);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
