@@ -1,16 +1,24 @@
 import { useBillGates } from "../context/BillContext"
 
 function ProductsList() {
-    const { cart } = useBillGates()
+    const { cart, total } = useBillGates()
 
   return (
-    <div>
-        <h4>Your Receipt</h4>
-        <ul>
+    <div className="products-list">
+        <h5>Your Receipt</h5>
+        <div>
             {cart.map((item) => (
-                <li key={item.id}>{item.title} - ${item.price}</li>
+                <div key={item.id} className="products-list-item">
+                    <span>{item.title}</span>
+                    <span>{item.price}</span>
+                </div>
             ))}
-        </ul>
+        </div>
+        <hr />
+        <div className="products-list-total">
+            <h6>Total</h6>
+            <span>{total}</span>
+        </div>
     </div>
   )
 }

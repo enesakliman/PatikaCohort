@@ -39,6 +39,23 @@
 }
 
 /* Products */
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-title {
+    background-image: linear-gradient(to top, #39706f, #3c7372, #407674, #437977, #467c7a);
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -70,4 +87,11 @@
     font-size: 1rem;
 }
 
+/* ProductsList */
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 

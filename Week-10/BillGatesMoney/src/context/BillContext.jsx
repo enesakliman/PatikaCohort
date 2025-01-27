@@ -15,23 +15,14 @@ export const BillProvider = ({ children }) => {
     const [total, setTotal] = useState(0) // total spent
     const [count, setCount] = useState(0) // product count
 
-
-    const handleBuy = (id) => {
-        const item = billData.find((item) => item.id === id)
-        if (money >= item.price) {
-            setMoney(money - item.price)
-            setCart([...cart, item])
-            setTotal(total + item.price)
-            setCount(count + 1)
+    const handleBuy = (id) => { 
+        const product = billData.find((item) => item.id == id)
+        if (money >= product.price) {
+            setMoney(money - product.price)
+            setCart([...cart, product])
+            setTotal(total + product.price)
+            setCount((count) => count + 1)
         }
-    }
-
-    const handleSell = (id) => {
-        const item = cart.find((item) => item.id === id)
-        setMoney(money + item.price)
-        setCart(cart.filter((item) => item.id !== id))
-        setTotal(total - item.price)
-        setCount(count - 1)
     }
 
 
@@ -42,8 +33,9 @@ export const BillProvider = ({ children }) => {
         money,
         cart,
         total,
+        count,
         handleBuy,
-        handleSell,
+        // handleSell,
 
 
     }
