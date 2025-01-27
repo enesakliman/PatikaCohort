@@ -44,7 +44,7 @@ import Skyscraper from "./assets/skyscraper.jpg";
 import CruiseShip from "./assets/cruise-ship.jpg";
 import NBATeam from "./assets/nba-team.jpg";
 
-export const DATA = [
+export const BillData = [
   { id: 1, title: "Big Mac", price: 2, image: BigMac },
   { id: 2, title: "Flip Flops", price: 3, image: FlipFlops },
   { id: 3, title: "Coca-Cola Pack", price: 5, image: CocaColaPack,},
