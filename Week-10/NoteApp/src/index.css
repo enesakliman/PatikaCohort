@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 65vh;
 }
 
 .notes-input-container h1 {
@@ -100,5 +100,38 @@ body {
   color: #fff;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+.notes-contaniner {
+  width: 80%;
+  height: 35vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.notes-color-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.note {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
