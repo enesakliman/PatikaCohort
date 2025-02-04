@@ -1,10 +1,9 @@
-import logo from "../assets/starwarslog.png";
-import shipImg from "../assets/ships.png";
-import { useStarWars } from "../context/StarWarsContext";
+import logo from "../assets/starwarslog.png"
+import shipImg from "../assets/ships.png"
+import { useStarWars } from "../context/StarWarsContext"
 
 function HomeStar() {
-  const { filteredShips, handleSearchInput, searchTerm, handleSearchSubmit } =
-    useStarWars();
+  const { filteredShips, handleSearchInput, searchTerm, handleSearchSubmit, selectShip } = useStarWars()
 
   return (
     <>
@@ -29,8 +28,8 @@ function HomeStar() {
         <div className="star-list">
           {filteredShips.length > 0 ? (
             filteredShips.map((ship) => (
-              <div className="star-card" key={ship.name}>
-                <img src={shipImg} alt="Starship" />
+              <div className="star-card" key={ship.name} onClick={() => selectShip(ship.url.split("/").slice(-2)[0])}>
+                <img src={shipImg || "/placeholder.svg"} alt="Starship" />
                 <h3>{ship.name}</h3>
                 <p>Model: {ship.model}</p>
                 <p>Hyperdrive rating: {ship.hyperdrive_rating}</p>
@@ -42,7 +41,8 @@ function HomeStar() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default HomeStar;
+export default HomeStar
+
